@@ -23,8 +23,8 @@ theme-root:
 	- index.php
 	- functions.php
 	- screenshot.png
-  - header.php
-  - footer.php
+	- header.php
+	- footer.php
 	...
 ```
 
