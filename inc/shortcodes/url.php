@@ -46,7 +46,7 @@ add_shortcode(
 	'page-url',
 	function ( $atts ) {
 		if ( ! empty( $atts ) && isset( $atts['slug'] ) ) {
-			return get_url( $atts['slug'] );
+			return fn_get_url_by_slug( $atts['slug'] );
 		}
 		return '';
 	}
