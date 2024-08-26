@@ -15,7 +15,7 @@ add_filter(
 
 add_action(
 	'manage_pages_custom_column',
-	function () {
+	function ( $column_name, $post_id ) {
 		if ( 'slug' === $column_name ) {
 			$post = get_post( $post_id );
 			$slug = $post->post_name;
